@@ -1,0 +1,151 @@
+lwip/port/ethernetif.o: ../lwip/port/ethernetif.c \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/mem.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/opt.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/lwipopts.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/osa/inc/fsl_os_abstraction.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/osa/inc/fsl_os_abstraction_free_rtos.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FreeRTOS.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FreeRTOSConfig.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/projdefs.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/portable.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/deprecated_definitions.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/portmacro.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/mpu_wrappers.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/semphr.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/queue.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/event_groups.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/timers.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/task.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/list.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/debug.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/arch.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/cc.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/sys_arch.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/inc/fsl_debug_console.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/pbuf.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/err.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/stats.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/memp.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/memp_std.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/snmp.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip_addr.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/def.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/netif/etharp.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netif.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/netif/ppp_oe.h \
+ ../lwip/port/ethernetif.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/fsl_device_registers.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cm4.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cmInstr.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cmFunc.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cmSimd.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/SDK/platform/devices/MK64F12/startup/system_MK64F12.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12_extension.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/fsl_bitaccess.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12_features.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Sources/fsl_phy_driver.h
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/mem.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/opt.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/lwipopts.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/osa/inc/fsl_os_abstraction.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/osa/inc/fsl_os_abstraction_free_rtos.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FreeRTOS.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FreeRTOSConfig.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/projdefs.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/portable.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/deprecated_definitions.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/portmacro.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/mpu_wrappers.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/semphr.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/queue.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/event_groups.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/timers.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/task.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/list.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/debug.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/arch.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/cc.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/sys_arch.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/inc/fsl_debug_console.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/pbuf.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/err.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/stats.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/memp.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/memp_std.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/snmp.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip_addr.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/def.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/netif/etharp.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netif.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/netif/ppp_oe.h:
+
+../lwip/port/ethernetif.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/fsl_device_registers.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cm4.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cmInstr.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cmFunc.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cmSimd.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/SDK/platform/devices/MK64F12/startup/system_MK64F12.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12_extension.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/fsl_bitaccess.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12_features.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Sources/fsl_phy_driver.h:
