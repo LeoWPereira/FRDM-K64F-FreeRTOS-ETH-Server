@@ -54,6 +54,7 @@
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\</Path>
     </IncludePaths>
     <SourceCodePaths>
+      <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras\</Path>
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\</Path>
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\SDK\platform\devices\MK64F12\startup\</Path>
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\SDK\platform\devices\</Path>
@@ -83,11 +84,15 @@
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\core\snmp\</Path>
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\</Path>
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\ppp\</Path>
+      <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\main\</Path>
       <Path>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\SDK\platform\devices\MK64F12\startup\gcc\</Path>
     </SourceCodePaths>
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras\debugFunctions.c</PathName>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras\generalExtraFunctions.c</PathName>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras\lwIP_functions.c</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\FRTOS1.c</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\KSDK1.c</PathName>
@@ -198,8 +203,12 @@
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\ppp\randm.c</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\ppp\vj.c</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\slipif.c</PathName>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\main\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras\debugFunctions.h</PathName>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras\generalExtraFunctions.h</PathName>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras\lwIP_functions.h</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\FRTOS1.h</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\FreeRTOS.h</PathName>
@@ -333,6 +342,7 @@
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\ppp\pppdebug.h</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\ppp\randm.h</PathName>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\netif\ppp\vj.h</PathName>
+      <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\main\includes.h</PathName>
     </GeneratedHs>
     <GeneratedASMs>
       <PathName>C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Generated_Code\portasm.s</PathName>

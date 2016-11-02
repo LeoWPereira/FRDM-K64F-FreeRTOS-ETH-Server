@@ -4,6 +4,10 @@ https://mcuoneclipse.com/2014/11/08/tutorial-freertos-with-the-kinetis-sdk-and-p
 
 https://mcuoneclipse.com/2015/10/28/tutorial-lwip-with-the-freertos-and-the-freescale-frdm-k64f-board/
 
+https://mcuoneclipse.com/2014/05/26/tutorial-data-logger-with-the-frdm-k64f-board/
+
+https://community.nxp.com/docs/DOC-275614                        <---- THIS IS A GOOD ONE
+
 
 HELPFUL LINKS AND PROBLEM SOLVING
 

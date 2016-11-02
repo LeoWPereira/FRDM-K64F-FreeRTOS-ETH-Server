@@ -58,35 +58,7 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/event_groups.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/KSDK1.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/eNet1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/board.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/pin_init.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/api.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/opt.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/lwipopts.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/debug.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/arch.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/cc.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/sys_arch.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/inc/fsl_debug_console.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netbuf.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/pbuf.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/err.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip_addr.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/def.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/sys.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/sys_arch.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/tcpip.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/api_msg.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/igmp.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netif.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netifapi.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/timers.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/udp.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/dhcp.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/netif/etharp.h \
- C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/ethernetif.h
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/eNet1.h
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/Cpu.h:
 
@@ -207,59 +179,3 @@ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/KSDK1.h:
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/eNet1.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/board.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/pin_init.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/api.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/opt.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/lwipopts.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/debug.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/arch.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/cc.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/sys_arch.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/inc/fsl_debug_console.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netbuf.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/pbuf.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/err.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip_addr.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/def.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/sys.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/arch/sys_arch.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/tcpip.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/api_msg.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/igmp.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netif.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/netifapi.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/timers.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/udp.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4/lwip/ip.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/dhcp.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/netif/etharp.h:
-
-C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/ethernetif.h:

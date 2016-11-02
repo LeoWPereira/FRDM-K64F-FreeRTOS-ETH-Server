@@ -26,6 +26,7 @@ S_UPPER_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+main \
 lwip/src/netif \
 lwip/src/netif/ppp \
 lwip/src/core \
@@ -54,4 +55,5 @@ SDK/platform/devices \
 SDK/platform/devices/MK64F12/startup \
 SDK/platform/devices/MK64F12/startup/gcc \
 Generated_Code \
+Extras \
 

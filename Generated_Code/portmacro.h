@@ -290,14 +290,14 @@ extern void vPortYieldFromISR(void);
 
 /*-----------------------------------------------------------*/
 
-/*#ifdef configASSERT
+#ifdef configASSERT
 #if configCPU_FAMILY_IS_ARM_M4_M7(configCPU_FAMILY) /* ARM M4/M7(F) core */
-/*  void vPortValidateInterruptPriority( void );
+  void vPortValidateInterruptPriority( void );
   #define portASSERT_IF_INTERRUPT_PRIORITY_INVALID() 	vPortValidateInterruptPriority()
 #else
   #define portASSERT_IF_INTERRUPT_PRIORITY_INVALID()
 #endif
-#endif*/
+#endif
 
 /*-----------------------------------------------------------*/
 /* Tickless idle/low power functionality. */

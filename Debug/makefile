@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include main/subdir.mk
 -include lwip/src/netif/ppp/subdir.mk
 -include lwip/src/netif/subdir.mk
 -include lwip/src/core/snmp/subdir.mk
@@ -36,6 +37,7 @@ RM := rm -rf
 -include SDK/platform/devices/MK64F12/startup/subdir.mk
 -include SDK/platform/devices/subdir.mk
 -include Generated_Code/subdir.mk
+-include Extras/subdir.mk
 -include subdir.mk
 -include objects.mk
 
