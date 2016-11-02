@@ -41,7 +41,12 @@ Generated_Code/clockMan1.o: ../Generated_Code/clockMan1.c \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_gpio_hal.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_gpio_driver.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_sdhc_hal.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_sdhc_driver.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdhc_card.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/IO_Map/core_cm4_PEx.h
 
 ../Generated_Code/clockMan1.h:
 
@@ -130,3 +135,13 @@ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_gpio
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_sdhc_hal.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_sdhc_driver.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdhc_card.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/IO_Map/core_cm4_PEx.h:

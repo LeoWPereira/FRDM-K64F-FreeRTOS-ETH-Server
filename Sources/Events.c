@@ -37,6 +37,8 @@ extern "C" {
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
+static volatile bool cardInserted = false; /* Flag to indicate a card has been inserted */
+
 /*
 ** ===================================================================
 **     Event       :  FRTOS1_vApplicationStackOverflowHook (module Events)
@@ -124,6 +126,122 @@ void FRTOS1_vApplicationMallocFailedHook(void)
   taskDISABLE_INTERRUPTS();
   /* Write your code here ... */
   for(;;) {}
+}
+
+/*
+** ===================================================================
+**     Callback    : fsl_sdhc1_OnCardDetect0
+**     Description : This callback function is called when card is
+**     inserted or removed.
+**     Parameters  :
+**       inserted - Specifies if card was inserted or removed.
+**     Returns : Nothing
+** ===================================================================
+*/
+void fsl_sdhc1_OnCardDetect0(bool inserted)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Callback    : fsl_sdhc1_OnCardInterrupt0
+**     Description : This callback function is called when card
+**     interrupt occurs.
+**     Parameters  : None
+**     Returns : Nothing
+** ===================================================================
+*/
+void fsl_sdhc1_OnCardInterrupt0(void)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Callback    : fsl_sdhc1_OnCardBlockGap0
+**     Description : This callback function is called when card block
+**     gap occurs.
+**     Parameters  : None
+**     Returns : Nothing
+** ===================================================================
+*/
+void fsl_sdhc1_OnCardBlockGap0(void)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Interrupt handler : PORTE_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void PORTE_IRQHandler(void)
+{
+	if(PORT_HAL_GetPortIntFlag(PORTE_BASE_PTR) == (1<<SD_CARD_DETECT))
+	{
+		check_card_inserted();
+	}
+
+	PORT_HAL_ClearPortIntFlag(PORTE_BASE_PTR);
+}
+
+/*
+** ===================================================================
+**     check_card_inserted
+**
+**     Description :
+**
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void check_card_inserted(void)
+{
+    uint32_t state = GPIO_DRV_ReadPinInput(SD_CARD_DETECT);
+    uint32_t matchState = -1;
+
+    // Debounce input
+    do
+    {
+        for (int i = 0; i < 0x1FFFFF; i++)
+        {
+            __asm("nop");
+        }
+        matchState = state;
+        state = GPIO_DRV_ReadPinInput(SD_CARD_DETECT);
+    }
+    while (state != matchState);
+
+    // Set card state
+    cardInserted = (state == 1);
+
+    fsl_sdhc1_OnCardDetect0(cardInserted);
+}
+
+/*
+** ===================================================================
+**     wait_for_card
+**
+**     Description :
+**
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void wait_for_card(void)
+{
+	while ((!cardInserted))
+	{
+		GPIO_DRV_TogglePinOutput(LEDRGB_BLUE); // toggle red LED
+
+		vTaskDelay(150/portTICK_RATE_MS); // wait for 150 ms
+	}
 }
 
 /* END Events */

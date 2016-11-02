@@ -218,6 +218,13 @@ Module "pin_init"  (component PinSettings)
    - pin_init_deinit_osc_pins -OSC method de-configures registers according to settings of routing. This method is enabled only 
                 if any pin of corresponding peripheral type is selected. Selected pins are either user selected pins or pins 
                 selected in pin items in components. Call this method code to un-route desired pins into OSC peripheral.
+   - pin_init_init_sdhc_pins -SDHC method configures registers according to settings  of routing and electrical features. This 
+                method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
+                selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
+                SDHC peripheral.
+   - pin_init_deinit_sdhc_pins -SDHC method de-configures registers according to settings of routing. This method is enabled 
+                only if any pin of corresponding peripheral type is selected. Selected pins are either user selected pins or 
+                pins selected in pin items in components. Call this method code to un-route desired pins into SDHC peripheral.
    - pin_init_init_tpiu_pins -TPIU method configures registers according to settings  of routing and electrical features. This 
                 method is enabled only if any pin of corresponding peripheral type is selected. Selected pins are either user 
                 selected pins or pins selected in pin items in components. Call this method code to route desired pins into 
@@ -884,6 +891,56 @@ Module "eNet1"     (component fsl_enet)
    - eNet1_ENET_DRV_LeaveMulticastGroup -Moves the ENET device from a multicast group.
    - eNet1_enet_mac_enqueue_buffer -ENET buffer enqueue.
    - eNet1_enet_mac_dequeue_buffer -ENET buffer dequeue.
+
+Module "WAIT1"     (component Wait)
+   - WAIT1_Wait10Cycles -Wait for 10 CPU cycles.
+   - WAIT1_Wait100Cycles -Wait for 100 CPU cycles.
+   - WAIT1_WaitCycles -Wait for a specified number of CPU cycles (16bit data type).
+   - WAIT1_WaitLongCycles -Wait for a specified number of CPU cycles (32bit data type).
+   - WAIT1_Waitms -Wait for a specified time in milliseconds.
+   - WAIT1_Waitus -Wait for a specified time in microseconds.
+   - WAIT1_Waitns -Wait for a specified time in nano seconds.
+   - WAIT1_WaitOSms -If an RTOS is enabled, this routine will use a non-blocking wait method. Otherwise it will do a 
+                busy/blocking wait.
+
+Module "TMOUT1"    (component Timeout)
+   - TMOUT1_GetCounter -Initializes a new timeout counter and returns the handle to it. At the end, use LeaveCounter() to free 
+                up the resource.
+   - TMOUT1_LeaveCounter -To be called to return the counter. Note that a counter always should be returned so it can be reused.
+   - TMOUT1_Value -Return the current value of the counter (in ticks)
+   - TMOUT1_SetCounter -Sets the counter to a new value and returns the value just prior to the call.
+   - TMOUT1_CounterExpired -Returns true if the timeout counter has been expired
+   - TMOUT1_AddTick -Method to be called from a periodic timer or interrupt. It will decrement all current counters by one down 
+                to zero.
+   - TMOUT1_Init -Initialization of the driver
+
+Module "CS1"       (component CriticalSection)
+   - CS1_CriticalVariable -Defines a variable if necessary. This is a macro.
+   - CS1_EnterCritical -Enters a critical section
+   - CS1_ExitCritical -Exits a critical section
+
+Module "memoryCard1" (component fsl_sdcard)
+   - memoryCard1_SDSPI_DRV_Init -Initializes the card on a specific SPI instance.
+   - memoryCard1_SDSPI_DRV_ReadBlocks -Reads blocks from the specific card.
+   - memoryCard1_SDSPI_DRV_WriteBlocks -Writes blocks of data to the specific card.
+   - memoryCard1_SDSPI_DRV_CheckReadOnly -Checks whether the card is write-protected.
+   - memoryCard1_SDSPI_DRV_Shutdown -Deinitializes the card.
+   - memoryCard1_SDCARD_DRV_Init -Initializes the card on a specific host controller.
+   - memoryCard1_SDCARD_DRV_ReadBlocks -Reads blocks from the specific card.
+   - memoryCard1_SDCARD_DRV_WriteBlocks -Writes blocks of data to the specific card.
+   - memoryCard1_SDCARD_DRV_EraseBlocks -Erases blocks of the specific card.
+   - memoryCard1_SDCARD_DRV_CheckReadOnly -Checks whether the card is write-protected.
+   - memoryCard1_SDCARD_DRV_Shutdown -Deinitializes the card.
+
+Module "PORTE"     (component Init_PORT_VAR0)
+   - PORTE_Init -This method initializes registers of the PORT module according to the Peripheral Initialization settings. Call 
+                this method in user code to initialize the module. By default, the method is called by PE automatically; see 
+                "Call Init method" property of the component for more details.
+
+Module "MPU"       (component Init_MPU_VAR0)
+   - MPU_Init -This method initializes registers of the MPU module according to the Peripheral Initialization settings. Call 
+                this method in user code to initialize the module. By default, the method is called by PE automatically; see 
+                "Call Init method" property of the component for more details.
 
 Module "Cpu"       (component MK64FN1M0LL12_4SDK)
    - Cpu_SystemInit -This method configures the oscillator (PLL) that is part of the microcontroller device. SystemInit is 

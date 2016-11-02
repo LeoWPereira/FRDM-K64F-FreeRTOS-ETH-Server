@@ -39,6 +39,11 @@
 #include "KSDK1.h"
 #include "UTIL1.h"
 #include "eNet1.h"
+#include "WAIT1.h"
+#include "TMOUT1.h"
+#include "CS1.h"
+#include "memoryCard1.h"
+#include "fsl_sdhc1.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -103,6 +108,76 @@ void FRTOS1_vApplicationMallocFailedHook(void);
 **     Returns     : Nothing
 ** ===================================================================
 */
+
+/*
+** ===================================================================
+**     Callback    : fsl_sdhc1_OnCardDetect0
+**     Description : This callback function is called when card is
+**     inserted or removed.
+**     Parameters  :
+**       inserted - Specifies if card was inserted or removed.
+**     Returns : Nothing
+** ===================================================================
+*/
+void fsl_sdhc1_OnCardDetect0(bool inserted);
+
+/*
+** ===================================================================
+**     Callback    : fsl_sdhc1_OnCardInterrupt0
+**     Description : This callback function is called when card
+**     interrupt occurs.
+**     Parameters  : None
+**     Returns : Nothing
+** ===================================================================
+*/
+void fsl_sdhc1_OnCardInterrupt0(void);
+
+/*
+** ===================================================================
+**     Callback    : fsl_sdhc1_OnCardBlockGap0
+**     Description : This callback function is called when card block
+**     gap occurs.
+**     Parameters  : None
+**     Returns : Nothing
+** ===================================================================
+*/
+void fsl_sdhc1_OnCardBlockGap0(void);
+
+/*
+** ===================================================================
+**     Interrupt handler : PORTE_IRQHandler
+**
+**     Description :
+**         User interrupt service routine. 
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void PORTE_IRQHandler(void);
+
+/*
+** ===================================================================
+**     check_card_inserted
+**
+**     Description :
+**
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void check_card_inserted(void);
+
+/*
+** ===================================================================
+**     wait_for_card
+**
+**     Description :
+**
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void wait_for_card(void);
 
 /* END Events */
 

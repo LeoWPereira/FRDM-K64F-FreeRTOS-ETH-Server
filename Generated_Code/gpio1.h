@@ -7,7 +7,7 @@
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-10-15, 01:04, # CodeGen: 1
+**     Date/Time   : 2016-11-02, 19:36, # CodeGen: 21
 **     Contents    :
 **         GPIO_DRV_Init                - void GPIO_DRV_Init(const gpio_input_pin_user_config_t * inputPins,const...
 **         GPIO_DRV_InputPinInit        - void GPIO_DRV_InputPinInit(const gpio_input_pin_user_config_t * inputPin);
@@ -82,7 +82,9 @@ extern const gpio_output_pin_user_config_t gpio1_OutConfig0[];
 /*! @brief Pin names */
 enum _gpio1_pinNames{
   J199_4 = GPIO_MAKE_PIN(GPIOC_IDX, 15U),
+  SD_CARD_DETECT = GPIO_MAKE_PIN(GPIOE_IDX, 6U),
   LED_RED = GPIO_MAKE_PIN(GPIOB_IDX, 22U),
+  LEDRGB_BLUE = GPIO_MAKE_PIN(GPIOB_IDX, 21U),
 };
 
   

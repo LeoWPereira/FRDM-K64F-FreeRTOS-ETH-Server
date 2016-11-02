@@ -1,5 +1,6 @@
-Sources/main.o: ../Sources/main.c \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/Cpu.h \
+Generated_Code/memoryCard1.o: ../Generated_Code/memoryCard1.c \
+ ../Generated_Code/memoryCard1.h ../Generated_Code/osa1.h \
+ ../Generated_Code/clockMan1.h ../Generated_Code/Cpu.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/fsl_device_registers.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include/MK64F12.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include/core_cm4.h \
@@ -37,30 +38,25 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/timers.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/task.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/list.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/osa1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/clockMan1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/Cpu.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_gpio_hal.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_gpio_driver.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h \
- ../Sources/Events.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/clockMan1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/pin_init.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/osa1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/gpio1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FRTOS1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/KSDK1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/PE_KSDK_Types.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FreeRTOS.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/semphr.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/event_groups.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/KSDK1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/eNet1.h
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_sdhc_hal.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_sdhc_driver.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdhc_card.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/IO_Map/core_cm4_PEx.h \
+ ../Generated_Code/fsl_sdhc1.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/Cpu.h:
+../Generated_Code/memoryCard1.h:
+
+../Generated_Code/osa1.h:
+
+../Generated_Code/clockMan1.h:
+
+../Generated_Code/Cpu.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/fsl_device_registers.h:
 
@@ -136,12 +132,6 @@ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/task.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/list.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/osa1.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/clockMan1.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/Cpu.h:
-
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_gpio_hal.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_gpio_driver.h:
@@ -150,32 +140,16 @@ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h:
 
-../Sources/Events.h:
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_sdhc_hal.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/clockMan1.h:
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_sdhc_driver.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/pin_init.h:
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdhc_card.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/osa1.h:
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/gpio1.h:
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/IO_Map/core_cm4_PEx.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FRTOS1.h:
+../Generated_Code/fsl_sdhc1.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/KSDK1.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/PE_KSDK_Types.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/FreeRTOS.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/semphr.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/event_groups.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/KSDK1.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h:
-
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/eNet1.h:
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h:

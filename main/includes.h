@@ -34,6 +34,12 @@
 #include "KSDK1.h"
 #include "UTIL1.h"
 #include "eNet1.h"
+#include "ff.h"
+#include "WAIT1.h"
+#include "TMOUT1.h"
+#include "CS1.h"
+#include "memoryCard1.h"
+#include "fsl_sdhc1.h"
 
 #if CPU_INIT_CONFIG
 	#include "Init_Config.h"
@@ -50,6 +56,7 @@
 #include "debugFunctions.h" // Debug related functions
 #include "generalExtraFunctions.h" // Other general functions needed
 #include "lwIP_functions.h" // LwIP related functions
+#include "sdCard.h" // SD Card related functions
 
 /*************************************************************************************************************
 *                                              		LwIP													 *

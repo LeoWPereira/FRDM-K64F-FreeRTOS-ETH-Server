@@ -161,6 +161,13 @@ void LwipInitTask(void* pvArguments)
 		printf("%s : GW %s\n", __FUNCTION__, ipaddr_ntoa(&fsl_netif0.gw));
 
 		printf("\nPlease try again later ...\n");
+
+		// Wait a second
+		vTaskDelay(1000/portTICK_PERIOD_MS);
+
+		// finish the lease of the IP address
+		err = dhcp_release(&fsl_netif0);
+		printf("%s : DHCP Release (%s)\n", __FUNCTION__, lwip_strerr(err));
 	}
 
 	//err = netconn_disconnect(pConnection);
@@ -169,12 +176,5 @@ void LwipInitTask(void* pvArguments)
 	//err = netconn_delete(pConnection);
 	//printf("%s : Deleted connection (%s)\n", __FUNCTION__, lwip_strerr(err));
 
-	// Wait a second
-	vTaskDelay(1000/portTICK_PERIOD_MS);
-
-	/* finish the lease of the IP address */
-	//err = dhcp_release(&fsl_netif0);
-	//printf("%s : DHCP Release (%s)\n", __FUNCTION__, lwip_strerr(err));
-
-	for( ; ; ) {};
+	//for( ; ; ) {};
 }

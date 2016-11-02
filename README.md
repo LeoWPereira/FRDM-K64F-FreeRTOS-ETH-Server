@@ -6,6 +6,8 @@ https://mcuoneclipse.com/2015/10/28/tutorial-lwip-with-the-freertos-and-the-free
 
 https://mcuoneclipse.com/2014/05/26/tutorial-data-logger-with-the-frdm-k64f-board/
 
+https://centaurian.co.uk/2015/07/15/frdm-k64f-data-logger-using-fatfs-with-ksdk-1-2-0/ <--- this is better then the above one
+
 https://community.nxp.com/docs/DOC-275614                        <---- THIS IS A GOOD ONE
 
 

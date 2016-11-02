@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.3.0
 **     Datasheet   : K64P144M120SF5RM, Rev.2, January 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-10-14, 22:20, # CodeGen: 3
+**     Date/Time   : 2016-11-02, 19:50, # CodeGen: 22
 **     Abstract    :
 **
 **     Settings    :
@@ -86,6 +86,20 @@ extern "C" {
 #if CPU_COMMON_INIT
 void Common_Init(void)
 {
+  /* This function contains initialization code which is not part of initialization 
+     methods of peripheral initialization (Init) components used in the project.  
+     This function is generated depending on Init components present 
+     in the project. To remove initialization of a register from the Common_Init() 
+     add Init component that includes initialization of this register.
+     This function is also affected by after reset value optimization property 
+     available in Component view\Generator_Configurations\Active configuration\
+     Optimizations\Utilize after reset values. */
+  /* SIM_SCGC5: PORTE=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTE_MASK;
+  /* SIM_SCGC7: MPU=1 */
+  SIM_SCGC7 |= SIM_SCGC7_MPU_MASK;
+  /* NVICIP63: PRI63=0 */
+  NVICIP63 = NVIC_IP_PRI63(0x00);
 }
 
 #endif /* CPU_COMMON_INIT */
@@ -119,6 +133,15 @@ void Components_Init(void)
   SIM_PDD_SetClockGate(SIM_BASE_PTR, SIM_PDD_CLOCK_GATE_LPTMR0, PDD_ENABLE);
 #endif
   vPortStopTickTimer(); /* tick timer shall not run until the RTOS scheduler is started */
+  /* ### CriticalSection "CS1" init code ... */
+  /* ### Timeout "TMOUT1" init code ... */
+  TMOUT1_Init();
+  /*! fsl_sdhc1 Auto initialization start */
+  OSA_InstallIntHandler(SDHC_IRQn, fsl_sdhc1_IRQHandler);
+  SDHC_DRV_Init(fsl_sdhc1_IDX, &fsl_sdhc1_host, &fsl_sdhc1_InitConfig0);
+  /*! fsl_sdhc1 Auto initialization end */
+  
+
 }
 #endif /* CPU_COMPONENTS_INIT */
 

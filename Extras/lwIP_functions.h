@@ -23,7 +23,7 @@
 * 											CONSTANTES E MACROS												 *
  ************************************************************************************************************/
 
-#define DHCP_TIMEOUT 5 // How many times we're gonna try to get an IP
+#define DHCP_TIMEOUT 10 // How many times we're gonna try to get an IP
 
 /*************************************************************************************************************
  * 										DEFINICOES DE TIPOS E ESTRUTURAS									 *

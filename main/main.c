@@ -64,7 +64,20 @@ int main(void)
 
   printf("APS!\r\nDesenvolvida por:\r\nLeonardo Winter Pereira\r\nLucas Zimmermann Cordeiro\r\n");
 
-  // Creates the first task
+  // Creates the LwIP task
+  if (xTaskCreate (
+		SDCardInitTask,  /* task function */
+		"SDCardInitTask", /* task name for kernel awareness */
+		configMINIMAL_STACK_SIZE * 4, /* task stack size */
+		(void*)NULL, /* optional task startup argument */
+		tskIDLE_PRIORITY,  /* initial priority */
+		(xTaskHandle*)NULL /* task handle */
+	  ) != pdPASS)
+  {
+	  for( ; ; ) { } /* error! probably out of memory */
+  }
+
+  // Creates the LwIP task
   if (xTaskCreate (
     		LwipInitTask,  /* task function */
 			"LwipInitTask", /* task name for kernel awareness */

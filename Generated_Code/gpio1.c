@@ -7,7 +7,7 @@
 **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-10-15, 01:04, # CodeGen: 1
+**     Date/Time   : 2016-11-02, 19:36, # CodeGen: 21
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -51,6 +51,7 @@
 
 /* MODULE gpio1. */
 
+#include "Events.h"
 #include "gpio1.h"
 #include <stdbool.h>
 
@@ -64,6 +65,14 @@ const gpio_input_pin_user_config_t gpio1_InpConfig0[] = {
     .config.interrupt = kPortIntDisabled
   },
   {
+    .pinName = SD_CARD_DETECT,
+    .config.isPullEnable = true, 
+    .config.pullSelect = kPortPullDown,
+    .config.isPassiveFilterEnabled = true,
+    .config.isDigitalFilterEnabled = true,
+    .config.interrupt = kPortIntEitherEdge
+  },
+  {
     .pinName = GPIO_PINS_OUT_OF_RANGE,
   }
 };
@@ -72,6 +81,13 @@ const gpio_output_pin_user_config_t gpio1_OutConfig0[] = {
   {
     .pinName = LED_RED,
     .config.outputLogic = 1,
+    .config.slewRate = kPortSlowSlewRate,
+    .config.isOpenDrainEnabled = true,
+    .config.driveStrength = kPortLowDriveStrength,
+  },
+  {
+    .pinName = LEDRGB_BLUE,
+    .config.outputLogic = 0,
     .config.slewRate = kPortSlowSlewRate,
     .config.isOpenDrainEnabled = true,
     .config.driveStrength = kPortLowDriveStrength,

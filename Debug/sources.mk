@@ -35,6 +35,7 @@ lwip/src/core/ipv4 \
 lwip/src/api \
 lwip/port \
 Static_Code/System \
+Static_Code/Peripherals \
 Sources \
 SDK/platform/system/src/interrupt \
 SDK/platform/system/src/clock \
@@ -42,18 +43,23 @@ SDK/platform/system/src/clock/MK64F12 \
 SDK/platform/osa/src \
 SDK/platform/hal/src/uart \
 SDK/platform/hal/src/sim/MK64F12 \
+SDK/platform/hal/src/sdhc \
 SDK/platform/hal/src/rtc \
 SDK/platform/hal/src/port \
 SDK/platform/hal/src/osc \
 SDK/platform/hal/src/mcg \
 SDK/platform/hal/src/gpio \
 SDK/platform/hal/src/enet \
+SDK/platform/drivers/src/sdhc \
 SDK/platform/drivers/src/rtc \
 SDK/platform/drivers/src/gpio \
 SDK/platform/drivers/src/enet \
 SDK/platform/devices \
 SDK/platform/devices/MK64F12/startup \
 SDK/platform/devices/MK64F12/startup/gcc \
+SDK/platform/composite/src/sdcard \
+Middleware/fsl_sd_disk/src \
+Middleware \
 Generated_Code \
 Extras \
 

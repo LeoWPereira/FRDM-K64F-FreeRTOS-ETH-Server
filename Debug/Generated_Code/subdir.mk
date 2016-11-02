@@ -4,14 +4,18 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Generated_Code/CS1.c \
 ../Generated_Code/Cpu.c \
 ../Generated_Code/FRTOS1.c \
 ../Generated_Code/KSDK1.c \
+../Generated_Code/TMOUT1.c \
 ../Generated_Code/UTIL1.c \
+../Generated_Code/WAIT1.c \
 ../Generated_Code/clockMan1.c \
 ../Generated_Code/croutine.c \
 ../Generated_Code/eNet1.c \
 ../Generated_Code/event_groups.c \
+../Generated_Code/fsl_sdhc1.c \
 ../Generated_Code/gpio1.c \
 ../Generated_Code/hardware_init.c \
 ../Generated_Code/heap_1.c \
@@ -20,6 +24,7 @@ C_SRCS += \
 ../Generated_Code/heap_4.c \
 ../Generated_Code/heap_5.c \
 ../Generated_Code/list.c \
+../Generated_Code/memoryCard1.c \
 ../Generated_Code/osa1.c \
 ../Generated_Code/pin_init.c \
 ../Generated_Code/port.c \
@@ -28,14 +33,18 @@ C_SRCS += \
 ../Generated_Code/timers.c 
 
 OBJS += \
+./Generated_Code/CS1.o \
 ./Generated_Code/Cpu.o \
 ./Generated_Code/FRTOS1.o \
 ./Generated_Code/KSDK1.o \
+./Generated_Code/TMOUT1.o \
 ./Generated_Code/UTIL1.o \
+./Generated_Code/WAIT1.o \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/croutine.o \
 ./Generated_Code/eNet1.o \
 ./Generated_Code/event_groups.o \
+./Generated_Code/fsl_sdhc1.o \
 ./Generated_Code/gpio1.o \
 ./Generated_Code/hardware_init.o \
 ./Generated_Code/heap_1.o \
@@ -44,6 +53,7 @@ OBJS += \
 ./Generated_Code/heap_4.o \
 ./Generated_Code/heap_5.o \
 ./Generated_Code/list.o \
+./Generated_Code/memoryCard1.o \
 ./Generated_Code/osa1.o \
 ./Generated_Code/pin_init.o \
 ./Generated_Code/port.o \
@@ -52,14 +62,18 @@ OBJS += \
 ./Generated_Code/timers.o 
 
 C_DEPS += \
+./Generated_Code/CS1.d \
 ./Generated_Code/Cpu.d \
 ./Generated_Code/FRTOS1.d \
 ./Generated_Code/KSDK1.d \
+./Generated_Code/TMOUT1.d \
 ./Generated_Code/UTIL1.d \
+./Generated_Code/WAIT1.d \
 ./Generated_Code/clockMan1.d \
 ./Generated_Code/croutine.d \
 ./Generated_Code/eNet1.d \
 ./Generated_Code/event_groups.d \
+./Generated_Code/fsl_sdhc1.d \
 ./Generated_Code/gpio1.d \
 ./Generated_Code/hardware_init.d \
 ./Generated_Code/heap_1.d \
@@ -68,6 +82,7 @@ C_DEPS += \
 ./Generated_Code/heap_4.d \
 ./Generated_Code/heap_5.d \
 ./Generated_Code/list.d \
+./Generated_Code/memoryCard1.d \
 ./Generated_Code/osa1.d \
 ./Generated_Code/pin_init.d \
 ./Generated_Code/port.d \
@@ -80,7 +95,7 @@ C_DEPS += \
 Generated_Code/%.o: ../Generated_Code/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DFSL_RTOS_FREE_RTOS -D"CPU_MK64FN1M0VLL12" -D"FSL_OSA_BM_TIMER_CONFIG=0" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\main" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\lwip" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/src/sim/MK64F12" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/system/src/clock/MK64F12" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/system/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/osa/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/src" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/startup" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/SDK/platform/devices/MK64F12/startup" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Sources" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc" -std=c99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DFSL_RTOS_FREE_RTOS -DCD_USING_GPIO -DSD_DISK_ENABLE=1 -D"CPU_MK64FN1M0VLL12" -D"FSL_OSA_BM_TIMER_CONFIG=0" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Middleware" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Middleware\fsl_sd_disk" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Middleware\fsl_sd_disk\src" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\main" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\lwip" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include\ipv4" -I"C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/src/sim/MK64F12" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/system/src/clock/MK64F12" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/system/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/osa/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/CMSIS/Include" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/include" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/src" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/utilities/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/devices/MK64F12/startup" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/SDK/platform/devices/MK64F12/startup" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Sources" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/IO_Map" -I"C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/Peripherals" -std=c99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

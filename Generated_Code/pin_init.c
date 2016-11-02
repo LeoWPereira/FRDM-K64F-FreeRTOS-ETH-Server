@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.3.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-10-17, 21:50, # CodeGen: 6
+**     Date/Time   : 2016-11-02, 19:36, # CodeGen: 21
 **     Abstract    :
 **
 **     Settings    :
@@ -1468,6 +1468,11 @@ void init_gpio_pins(uint32_t instance)
 {
   switch(instance) {    
     case PORTB_IDX:                     /* PORTB_IDX */
+      /* Affects PORTB_PCR21 register */
+      PORT_HAL_SetDriveStrengthMode(PORTB,21UL,kPortLowDriveStrength);  
+      PORT_HAL_SetMuxMode(PORTB,21UL,kPortMuxAsGpio);
+      PORT_HAL_SetSlewRateMode(PORTB,21UL,kPortSlowSlewRate);
+      PORT_HAL_SetOpenDrainCmd(PORTB,21UL,true);
       /* Affects PORTB_PCR22 register */
       PORT_HAL_SetDriveStrengthMode(PORTB,22UL,kPortLowDriveStrength);  
       PORT_HAL_SetMuxMode(PORTB,22UL,kPortMuxAsGpio);
@@ -1480,6 +1485,13 @@ void init_gpio_pins(uint32_t instance)
       PORT_HAL_SetMuxMode(PORTC,15UL,kPortMuxAsGpio);
       PORT_HAL_SetPullCmd(PORTC,15UL,true);
       PORT_HAL_SetPassiveFilterCmd(PORTC,15UL,true);
+      break;
+    case PORTE_IDX:                     /* PORTE_IDX */
+      /* Affects PORTE_PCR6 register */
+      PORT_HAL_SetPullMode(PORTE,6UL,kPortPullDown);
+      PORT_HAL_SetMuxMode(PORTE,6UL,kPortMuxAsGpio);
+      PORT_HAL_SetPullCmd(PORTE,6UL,true);
+      PORT_HAL_SetPassiveFilterCmd(PORTE,6UL,true);
       break;
     default:
       break;
@@ -1495,10 +1507,14 @@ void deinit_gpio_pins(uint32_t instance)
 {
   switch(instance) {    
     case PORTB_IDX:                     /* PORTB_IDX */
+      PORT_HAL_SetMuxMode(PORTB,21UL,kPortPinDisabled);
       PORT_HAL_SetMuxMode(PORTB,22UL,kPortPinDisabled);
       break;
     case PORTC_IDX:                     /* PORTC_IDX */
       PORT_HAL_SetMuxMode(PORTC,15UL,kPortPinDisabled);
+      break;
+    case PORTE_IDX:                     /* PORTE_IDX */
+      PORT_HAL_SetMuxMode(PORTE,6UL,kPortPinDisabled);
       break;
     default:
       break;
@@ -1556,6 +1572,47 @@ void init_osc_pins(uint32_t instance)
 void deinit_osc_pins(uint32_t instance)
 {
   PORT_HAL_SetMuxMode(PORTA,18UL,kPortPinDisabled);
+}
+
+/*FUNCTION**********************************************************************
+*
+* Function Name : init_sdhc_pins
+* Description   : SDHC method sets registers according routing settings.
+* Call this method code to route desired pins.
+*END**************************************************************************/
+void init_sdhc_pins(uint32_t instance)
+{
+  /* Affects PORTE_PCR3 register */
+  PORT_HAL_SetMuxMode(PORTE,3UL,kPortMuxAlt4);
+  /* Affects PORTE_PCR1 register */
+  PORT_HAL_SetMuxMode(PORTE,1UL,kPortMuxAlt4);
+  /* Affects PORTE_PCR0 register */
+  PORT_HAL_SetSlewRateMode(PORTE,0UL,kPortFastSlewRate);
+  PORT_HAL_SetMuxMode(PORTE,0UL,kPortMuxAlt4);
+  PORT_HAL_SetPullMode(PORTE,0UL,kPortPullUp);
+  PORT_HAL_SetPullCmd(PORTE,0UL,true);
+  PORT_HAL_SetDriveStrengthMode(PORTE,0UL,kPortHighDriveStrength);  
+  /* Affects PORTE_PCR5 register */
+  PORT_HAL_SetMuxMode(PORTE,5UL,kPortMuxAlt4);
+  /* Affects PORTE_PCR4 register */
+  PORT_HAL_SetMuxMode(PORTE,4UL,kPortMuxAlt4);
+  /* Affects PORTE_PCR2 register */
+  PORT_HAL_SetMuxMode(PORTE,2UL,kPortMuxAlt4);
+}
+/*FUNCTION**********************************************************************
+*
+* Function Name : deinit_sdhc_pins
+* Description   : SDHC method sets registers according routing settings.
+* Call this method code to disable routing of desired pins.
+*END**************************************************************************/
+void deinit_sdhc_pins(uint32_t instance)
+{
+  PORT_HAL_SetMuxMode(PORTE,3UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTE,1UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTE,0UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTE,5UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTE,4UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTE,2UL,kPortPinDisabled);
 }
 
 /*FUNCTION**********************************************************************

@@ -45,6 +45,11 @@ Extras/generalExtraFunctions.o: ../Extras/generalExtraFunctions.c \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_gpio_driver.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_sdhc_hal.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_sdhc_driver.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdhc_card.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/IO_Map/core_cm4_PEx.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Sources/Events.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/clockMan1.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/pin_init.h \
@@ -60,11 +65,29 @@ Extras/generalExtraFunctions.o: ../Extras/generalExtraFunctions.c \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/KSDK1.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/eNet1.h \
- C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/board.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/WAIT1.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/TMOUT1.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/CS1.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/CS1.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/memoryCard1.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/fsl_sdhc1.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/fsl_sdhc1.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Middleware/ff.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Middleware/ffconf.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/Init_Config.h \
  C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/pin_init.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/PORTE_Config.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/Peripherals/PORTE_Init.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/PORTE.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/MPU_Config.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/Peripherals/MPU_Init.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/MPU.h \
+ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/board.h \
  C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/debugFunctions.h \
  C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/generalExtraFunctions.h \
  C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/lwIP_functions.h \
+ C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/sdCard.h \
  C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/api.h \
  C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/opt.h \
  C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\port/lwipopts.h \
@@ -184,6 +207,16 @@ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_enet_hal
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_enet_driver.h:
 
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/hal/inc/fsl_sdhc_hal.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/drivers/inc/fsl_sdhc_driver.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdhc_card.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/IO_Map/core_cm4_PEx.h:
+
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Sources/Events.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/clockMan1.h:
@@ -214,15 +247,51 @@ C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/UTIL1.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/eNet1.h:
 
-C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/board.h:
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/WAIT1.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/TMOUT1.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/CS1.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/CS1.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/memoryCard1.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/fsl_sdhc1.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/SDK/platform/composite/inc/fsl_sdmmc_card.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/fsl_sdhc1.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Middleware/ff.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Middleware/ffconf.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/Init_Config.h:
 
 C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/pin_init.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/PORTE_Config.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/Peripherals/PORTE_Init.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/PORTE.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/MPU_Config.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Static_Code/Peripherals/MPU_Init.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/MPU.h:
+
+C:/Users/leona/workspace.kds/FreeRTOS-lwIP-IoT/Generated_Code/board.h:
 
 C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/debugFunctions.h:
 
 C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/generalExtraFunctions.h:
 
 C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/lwIP_functions.h:
+
+C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\Extras/sdCard.h:
 
 C:\Users\leona\workspace.kds\FreeRTOS-lwIP-IoT\lwip\src\include/lwip/api.h:
 
