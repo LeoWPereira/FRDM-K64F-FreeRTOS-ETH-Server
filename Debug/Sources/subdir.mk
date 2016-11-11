@@ -5,15 +5,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Sources/Events.c \
-../Sources/fsl_phy_driver.c 
+../Sources/fsl_phy_driver.c \
+../Sources/main.c 
 
 OBJS += \
 ./Sources/Events.o \
-./Sources/fsl_phy_driver.o 
+./Sources/fsl_phy_driver.o \
+./Sources/main.o 
 
 C_DEPS += \
 ./Sources/Events.d \
-./Sources/fsl_phy_driver.d 
+./Sources/fsl_phy_driver.d \
+./Sources/main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

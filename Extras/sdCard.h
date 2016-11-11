@@ -47,7 +47,14 @@ void append(char *fileNameAndPath, char *text);
  * Inputs:
  * Outputs:
  */
-void SDCardInitTask(void* pvArguments);
+void SDCardInitTask(void);
+
+/*
+ * Description:
+ * Inputs:
+ * Outputs:
+ */
+void waitForData(void);
 
 /*************************************************************************************************************
  * 												VARIAVEIS EXTERNAVEIS										 *

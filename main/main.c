@@ -66,29 +66,29 @@ int main(void)
 
   // Creates the LwIP task
   if (xTaskCreate (
-		SDCardInitTask,  /* task function */
-		"SDCardInitTask", /* task name for kernel awareness */
-		configMINIMAL_STACK_SIZE * 4, /* task stack size */
-		(void*)NULL, /* optional task startup argument */
-		tskIDLE_PRIORITY,  /* initial priority */
-		(xTaskHandle*)NULL /* task handle */
-	  ) != pdPASS)
-  {
-	  for( ; ; ) { } /* error! probably out of memory */
-  }
+    		LwipInitTask,  // task function
+			"LwipInitTask", // task name for kernel awareness
+			configMINIMAL_STACK_SIZE * 4, // task stack size
+			(void*)NULL, // optional task startup argument
+			tskIDLE_PRIORITY,  // initial priority
+			(xTaskHandle*)NULL // task handle
+    ) != pdPASS)
+    {
+  	  for( ; ; ) { } // error! probably out of memory
+    }
 
   // Creates the LwIP task
   if (xTaskCreate (
-    		LwipInitTask,  /* task function */
-			"LwipInitTask", /* task name for kernel awareness */
-			configMINIMAL_STACK_SIZE * 4, /* task stack size */
-			(void*)NULL, /* optional task startup argument */
-			tskIDLE_PRIORITY,  /* initial priority */
-			(xTaskHandle*)NULL /* task handle */
-    ) != pdPASS)
-    {
-  	  for( ; ; ) { } /* error! probably out of memory */
-    }
+		SDCardInitTask,  // task function
+		"SDCardInitTask", // task name for kernel awareness
+		configMINIMAL_STACK_SIZE * 4, // task stack size
+		(void*)NULL, // optional task startup argument
+		tskIDLE_PRIORITY,  // initial priority
+		(xTaskHandle*)NULL // task handle
+	  ) != pdPASS)
+  {
+	  for( ; ; ) { } // error! probably out of memory
+  }
 
   // Start FreeRTOS scheduler, does usually not return!
   vTaskStartScheduler();

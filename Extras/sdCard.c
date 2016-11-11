@@ -70,7 +70,7 @@ void append(char *fileNameAndPath, char *text)
             sprintf(pathWithDriveLetter, "%u:%s", SD_DRIVE_NUMBER, fileNameAndPath);
 
             /* Open a text file */
-            fResult = f_open(&file, pathWithDriveLetter, FA_OPEN_ALWAYS | FA_WRITE);
+            //fResult = f_open(&file, pathWithDriveLetter, FA_OPEN_ALWAYS | FA_WRITE);
             if (fResult == FR_OK)
             {
                 /* Move to end of the file to append data */
@@ -80,6 +80,8 @@ void append(char *fileNameAndPath, char *text)
                 uint32_t bytesWritten;
                 fResult = f_write(&file, text, strlen(text), &bytesWritten);
             }
+            else
+            	printf("ERROR while opening a file");
             /* Close the file */
             fResult = f_close(&file);
         }
@@ -89,9 +91,9 @@ void append(char *fileNameAndPath, char *text)
     }
 }
 
-void SDCardInitTask(void* pvArguments)
+void SDCardInitTask(void)
 {
-	(void)pvArguments;
+	//(void)pvArguments;
 
 	printf("%s: Waiting for SD Card ..\n", __FUNCTION__);
 
@@ -105,7 +107,16 @@ void SDCardInitTask(void* pvArguments)
 
     printf("%s: SD Card inserted ..\n", __FUNCTION__);
 
-    append("/data.log", "test data");
+    waitForData();
+}
 
-    printf("%s: data appended ..\n", __FUNCTION__);
+void waitForData(void)
+{
+	//append("/data.log", "test data");
+
+	printf("%s: data appended ..\n", __FUNCTION__);
+
+	while(true)
+	{
+	}
 }

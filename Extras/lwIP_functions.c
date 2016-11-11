@@ -133,7 +133,7 @@ void LwipInitTask(void* pvArguments)
 			err = netconn_connect(pConnection, IP_ADDR_BROADCAST, 12346 );
 			printf("%s : Connected to IP_ADDR_BROADCAST port 12346 (%s)\n", __FUNCTION__, lwip_strerr(err));
 
-			for(int i = 0; i < 10; i++ )
+			/*for(int i = 0; i < 10; i++ )
 			{
 				struct netbuf* buf = netbuf_new();
 				void* data = netbuf_alloc(buf, sizeof(msg));
@@ -147,7 +147,9 @@ void LwipInitTask(void* pvArguments)
 
 				// Wait a second
 				vTaskDelay(1000/portTICK_PERIOD_MS);
-			}
+			}*/
+
+			waitForConnection();
 		}
 	}
 
@@ -168,6 +170,11 @@ void LwipInitTask(void* pvArguments)
 		// finish the lease of the IP address
 		err = dhcp_release(&fsl_netif0);
 		printf("%s : DHCP Release (%s)\n", __FUNCTION__, lwip_strerr(err));
+
+		vTaskDelay(60000/portTICK_PERIOD_MS);
+
+		// Retry a connection after 1 min
+		LwipInitTask(pvArguments);
 	}
 
 	//err = netconn_disconnect(pConnection);
@@ -175,6 +182,12 @@ void LwipInitTask(void* pvArguments)
 
 	//err = netconn_delete(pConnection);
 	//printf("%s : Deleted connection (%s)\n", __FUNCTION__, lwip_strerr(err));
+}
 
-	//for( ; ; ) {};
+void waitForConnection(void)
+{
+	while(true)
+	{
+
+	}
 }

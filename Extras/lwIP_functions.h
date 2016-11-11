@@ -42,6 +42,13 @@ TaskHandle_t blinky_task_handler = NULL;
  */
 void LwipInitTask(void* pvArguments);
 
+/*
+ * Description:
+ * Inputs:
+ * Outputs:
+ */
+void waitForConnection(void);
+
 /*************************************************************************************************************
  * 												VARIAVEIS EXTERNAVEIS										 *
  ************************************************************************************************************/

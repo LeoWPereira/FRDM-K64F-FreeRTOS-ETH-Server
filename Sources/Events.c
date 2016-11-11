@@ -238,7 +238,7 @@ void wait_for_card(void)
 {
 	while ((!cardInserted))
 	{
-		GPIO_DRV_TogglePinOutput(LEDRGB_BLUE); // toggle red LED
+		GPIO_DRV_TogglePinOutput(LEDRGB_BLUE); // toggle blue LED
 
 		vTaskDelay(150/portTICK_RATE_MS); // wait for 150 ms
 	}
